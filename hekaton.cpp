@@ -118,21 +118,12 @@ struct Relation {
 		  }
    }
    
-   void tttt(uint64_t b){
-   }
 
    // Computes index into hash table for attribute value a
    uint64_t hash(uint64_t a) {
       return a&(sizeIndex-1);
    }
 };
-
-int main_test(){
-	Relation R(1ull<<20);
-	R.insert(10,20,30);
-	Row* r = R.lookup(10);
-
-}
 
 int main() {
    uint64_t n=2500000;
